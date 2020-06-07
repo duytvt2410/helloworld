@@ -7,8 +7,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
-	 @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
-	    public String index() {
-	        return "home";
-	    }
+    @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
+    public ModelAndView getHome() {
+    	ModelAndView mav = new ModelAndView();
+    	mav.setViewName("home");
+    	return mav;
+    }
+    @RequestMapping(value = "/dang-nhap", method = RequestMethod.GET)
+    public ModelAndView getLogin() {
+    	ModelAndView mav = new ModelAndView();
+    	mav.setViewName("login");
+    	return mav;
+    }
 }

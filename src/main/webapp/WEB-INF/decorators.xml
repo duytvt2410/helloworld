@@ -3,8 +3,13 @@
 
 	
     <decorator name="trang-chu" page="web.jsp">
-       <pattern>/</pattern>
+       <pattern>/trang-chu</pattern>
     </decorator>
+    
+    <decorator name="dang-nhap" page="login.jsp">
+       <pattern>/dang-nhap</pattern>
+    </decorator>
+    
 
 
 </decorators>
