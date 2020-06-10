@@ -48,10 +48,10 @@ public class JPAConfig {
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/springweb?characterEncoding=UTF-8");
-		dataSource.setUsername("root");
-		dataSource.setPassword("");
+		dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setUrl("jdbc:postgresql://ec2-3-231-16-122.compute-1.amazonaws.com:5432/d9ffk1cqu082aq");
+		dataSource.setUsername("ixlqpoxlllweew");
+		dataSource.setPassword("3131047fefc116e84e02102210f4ce983c7821cf7d20a1f31eb8742724c64da8");
 		return dataSource;
 	}
 	
