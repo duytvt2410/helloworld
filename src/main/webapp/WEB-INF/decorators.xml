@@ -2,14 +2,17 @@
 <decorators defaultdir="/decorators">
 
 	
+    
     <decorator name="trang-chu" page="web.jsp">
        <pattern>/trang-chu</pattern>
     </decorator>
     
-    <decorator name="dang-nhap" page="login.jsp">
-       <pattern>/dang-nhap</pattern>
+   <decorator name="admin" page="admin.jsp">
+       <pattern>/admin*</pattern>
     </decorator>
-    
 
+    <decorator name="login" page="login.jsp">
+       <pattern>/login</pattern>
+    </decorator>
 
 </decorators>

@@ -1,4 +1,6 @@
 <%@include file="/common/taglib.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <div class="container">
 
     <!-- Outer Row -->
@@ -13,7 +15,18 @@
               <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
               <div class="col-lg-6">
                 <div class="p-5">
-                
+                 <c:if test="${param.incorrectAccount != null}">
+                 <div class="alert alert-danger alert-dismissible fade show">
+				    <button type="button" class="close" data-dismiss="alert">&times;</button>
+				    <strong>Đăng nhập thất bại! </strong>Email hoặc mật khẩu không đúng.
+				  </div>
+				</c:if>
+				<c:if test="${param.accessDenied != null}">
+				<div class="alert alert-warning alert-dismissible fade show">
+				    <button type="button" class="close" data-dismiss="alert">&times;</button>
+				    <strong>Cảnh báo! </strong>Bạn không có quyền truy cập vào trang này.
+				</div>
+				</c:if>
 
                   <form class="user" action="j_spring_security_check" method="post">
                     <div class="form-group">
