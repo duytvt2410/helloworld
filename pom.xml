@@ -18,7 +18,7 @@
 		<sitemesh.version>2.4.2</sitemesh.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
 		<spring.data>1.11.5.RELEASE</spring.data>
-		<junit.version>3.8.1</junit.version>
+		<junit.version>4.13.1</junit.version>
 
 
 	</properties>
